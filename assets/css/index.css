@@ -274,21 +274,42 @@ a {
 
 .hero-matte {}
 
-.keylines-matte {
+#master .keylines-matte {
     margin: 40px 0;
 }
-
-.keylines-matte span {
+#master .keylines-matte .keylines {
     color: #fff;
     font-weight: 400;
+}
+
+#master .keylines-matte .keylines span {
+    display: block;
     margin-bottom: 0.125em;
-    -webkit-animation: keylines-SlideUp;
-    animation: keylines-SlideUp;
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0
+}
+
+#master .keylines-matte.animation-go .keylines  span {
+    -webkit-animation: keylinesSlideUp;
+    animation: keylinesSlideUp;
     -webkit-animation-duration: 1400ms;
     animation-duration: 1400ms;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
+
+#master .keylines-matte.animation-go .keylines  span:nth-of-type(2) {
+    -webkit-animation-delay: 300ms;
+    animation-delay: 300ms
+}
+
+
+#master .keylines-matte.animation-go .keylines  span:nth-of-type(3) {
+    -webkit-animation-delay: 600ms;
+    animation-delay: 600ms
+}
+
 
 /* Animations - Keylines */
 
