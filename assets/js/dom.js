@@ -1,10 +1,15 @@
-jQuery(document).ready(function (e) {
-    function a(a, t, n) {
-        e(a).on("onscreen", function (a, i) {
-            i.percentInview > t ? e(n || this).addClass("animation-go") : e(n || this).removeClass("animation-go")
-        }
+var keylines = document.querySelector(".keylines-matte");
+keylines.setAttribute('data-scroll', '');
 
-        )
+ScrollOut({
+    onShown: function (keylines) {
+        // remove the class
+        keylines.classList.remove("animation-go");
+
+        // force reflow
+        void keylines.offsetWidth;
+
+        // re-add the animated cl
+        keylines.classList.add("animation-go");
     }
-
 });
