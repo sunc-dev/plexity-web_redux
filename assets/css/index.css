@@ -314,44 +314,9 @@ a {
 }
 
 
-/* Animations - Keylines */
-
-@-webkit-keyframes keylinesSlideUp {
-    0% {
-        -webkit-transform: translateY(50px);
-        transform: translateY(50px);
-        opacity: 0
-    }
-
-    100% {
-        -webkit-transform: translateY(0px);
-        transform: translateY(0px);
-        opacity: 1
-    }
-}
-
-@keyframes keylinesSlideUp {
-    0% {
-        -webkit-transform: translateY(50px);
-        transform: translateY(50px);
-        opacity: 0
-    }
-
-    100% {
-        -webkit-transform: translateY(0px);
-        transform: translateY(0px);
-        opacity: 1
-    }
-}
-
 .hero-content {
     align-self: center;
 
-}
-
-.hero-p-txt {
-    font-weight: 400;
-    font-size: 1.2rem;
 }
 
 .features-boxed {
@@ -444,8 +409,36 @@ a {
 
 /* Section - About */
 #about {
-    padding: 80px 0 0 0;
+    padding: 88px 0 88px 0;
 }
+
+#about .about-mission-matte {
+    text-align: center;
+}
+
+#about .subhead-txt {
+    text-transform: uppercase;
+}
+
+
+#about .hero-p-txt {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+}
+
+@media (min-width: 576px) {
+    #about .hero-p-txt {
+        width: 80%;
+    }
+}
+
+
+
 
 /* Section - Challenges */
 #challenges {
@@ -749,4 +742,40 @@ a {
     opacity: 0.3;
     font-size: 13px;
     margin-bottom: 0;
+}
+
+
+
+
+
+
+
+/* Animations - Keylines */
+
+@-webkit-keyframes keylinesSlideUp {
+    0% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        opacity: 1
+    }
+}
+
+@keyframes keylinesSlideUp {
+    0% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        opacity: 1
+    }
 }
