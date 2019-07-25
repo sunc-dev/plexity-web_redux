@@ -15,21 +15,19 @@ ScrollOut({
 
 });
 
+var taglines = document.querySelector(".about-prime-head");
+taglines.setAttribute('data-scroll', '');
 
+ScrollOut({
+    onShown: function (taglines) {
+        // remove the class
+        taglines.classList.remove("animation-go");
 
-$('.about-mission-matte').onScreen({
-    container: window,
-    direction: 'vertical',
-    doIn: function () {
-        $('.about-mission-matte').classList.add("animation-go");
-    },
-    doOut: function () {
-        $('.about-mission-matte').classList.remove("animation-go");
-    },
-    tolerance: 0,
-    throttle: 50,
-    toggleClass: 'onScreen',
-    lazyAttr: null,
-    lazyPlaceholder: 'someImage.jpg',
-    debug: false
+        // force reflow
+        void taglines.offsetWidth;
+
+        // re-add the animated cl
+        taglines.classList.add("animation-go");
+    }
+
 });

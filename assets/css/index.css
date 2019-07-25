@@ -292,8 +292,8 @@ a {
 }
 
 #master .keylines-matte.animation-go .keylines span {
-    -webkit-animation: keylinesSlideUp;
-    animation: keylinesSlideUp;
+    -webkit-animation: keylinesRise;
+    animation: keylinesRise;
     -webkit-animation-duration: 1400ms;
     animation-duration: 1400ms;
     -webkit-animation-fill-mode: forwards;
@@ -412,7 +412,7 @@ a {
     padding: 88px 0 88px 0;
 }
 
-#about .about-mission-matte {
+#about .about-primary-matte {
     text-align: center;
 }
 
@@ -421,34 +421,35 @@ a {
     font-size: .85rem;
 }
 
-#about .head-hero {
+#about .head-prime {
     font-weight: 900;
 }
 
-#about .head-hero span {
+#about .head-prime span {
     display: block;
 }
 
-#master .about-mission-matte.animation-go .head-hero span {
-    -webkit-animation: keylinesSlideUp;
-    animation: keylinesSlideUp;
+#about .about-prime-head .head-prime span:last-of-type {
+    color: #F24405;
+    transform: translateY(0.5em);
+    opacity: 0;
+}
+
+#about .about-prime-head.animation-go .head-prime span:last-of-type {
+    -webkit-animation: taglinesRise;
+    animation: taglinesRise;
     -webkit-animation-duration: 1400ms;
     animation-duration: 1400ms;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-    -webkit-animation-delay: 100ms;
-    animation-delay: 100ms
-}
-
-#about .head-hero.animation-go span:nth-of-type(2) {
-    color: #F24405;
-    -webkit-animation-delay: 400ms;
-    animation-delay: 400ms
+    -webkit-animation-delay: 50ms;
+    animation-delay: 50ms;
 }
 
 
 
-#about .hero-p-txt {
+
+#about .about-prime-txt {
     font-weight: 300;
     font-size: 1.5rem;
     line-height: 1.5;
@@ -459,7 +460,7 @@ a {
 }
 
 @media (min-width: 576px) {
-    #about .hero-p-txt {
+    #about .about-prime-txt {
         width: 80%;
     }
 }
@@ -779,7 +780,7 @@ a {
 
 /* Animations - Keylines */
 
-@-webkit-keyframes keylinesSlideUp {
+@-webkit-keyframes keylinesRise {
     0% {
         -webkit-transform: translateY(50px);
         transform: translateY(50px);
@@ -793,7 +794,7 @@ a {
     }
 }
 
-@keyframes keylinesSlideUp {
+@keyframes keylinesRise {
     0% {
         -webkit-transform: translateY(50px);
         transform: translateY(50px);
@@ -804,5 +805,36 @@ a {
         -webkit-transform: translateY(0px);
         transform: translateY(0px);
         opacity: 1
+    }
+}
+
+/* Animations - taglines */
+
+
+@-webkit-keyframes taglinesRise {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(0.5em);
+        transform: translateY(0.5em)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+@keyframes taglinesRise {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(0.5em);
+        transform: translateY(0.5em)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
     }
 }
