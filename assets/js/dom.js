@@ -16,11 +16,6 @@ ScrollOut({
 });
 
 
-var os = new OnScreen({
-    tolerance: 0,
-    debounce: 100,
-    container: window
-});
 
 $('.about-mission-matte').onScreen({
     container: window,
