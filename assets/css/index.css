@@ -21,15 +21,15 @@ h1 {
 }
 
 h2 {
-    font-size: 4.325rem;
-}
-
-h3 {
     font-size: 4.025rem;
 }
 
-h4 {
+h3 {
     font-size: 3.525rem;
+}
+
+h4 {
+    font-size: 3.025rem;
 }
 
 a {
@@ -418,7 +418,34 @@ a {
 
 #about .subhead-txt {
     text-transform: uppercase;
+    font-size: .85rem;
 }
+
+#about .head-hero {
+    font-weight: 900;
+}
+
+#about .head-hero span {
+    display: block;
+}
+
+#master .about-mission-matte.animation-go .head-hero span {
+    -webkit-animation: keylinesSlideUp;
+    animation: keylinesSlideUp;
+    -webkit-animation-duration: 1400ms;
+    animation-duration: 1400ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 100ms;
+    animation-delay: 100ms
+}
+
+#about .head-hero.animation-go span:nth-of-type(2) {
+    color: #F24405;
+    -webkit-animation-delay: 400ms;
+    animation-delay: 400ms
+}
+
 
 
 #about .hero-p-txt {
