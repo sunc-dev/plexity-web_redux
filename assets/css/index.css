@@ -414,6 +414,7 @@ a {
 
 #about .about-primary-matte {
     text-align: center;
+    padding: 80px 0;
 }
 
 #about .subhead-txt {
@@ -436,18 +437,15 @@ a {
 }
 
 #about .about-prime-head.animation-go .head-prime span:last-of-type {
-    -webkit-animation: taglinesRise;
-    animation: taglinesRise;
+    -webkit-animation: animRise;
+    animation: animRise;
     -webkit-animation-duration: 1400ms;
     animation-duration: 1400ms;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-    -webkit-animation-delay: 50ms;
-    animation-delay: 50ms;
+    -webkit-animation-delay: 300ms;
+    animation-delay: 300ms;
 }
-
-
-
 
 #about .about-prime-txt {
     font-weight: 300;
@@ -465,8 +463,51 @@ a {
     }
 }
 
+#about .about-second-matte {
+    padding: 80px 0
+}
 
 
+#about .pts-matte {
+    padding: 80px 0
+}
+
+#about .pts-content {
+    margin-top: 30px;
+}
+
+#about .head-second {
+    font-weight: 900;
+}
+
+#about .head-second span {
+    display: block;
+}
+
+#about .about-second-head .head-second span:last-of-type {
+    transform: translateX(1.5rem);
+    opacity: 0;
+}
+
+#about .about-second-head.animation-go .head-second span:last-of-type {
+    -webkit-animation: animEaseLeft;
+    animation: animEaseLeft;
+    -webkit-animation-duration: 3400ms;
+    animation-duration: 3400ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 50ms;
+    animation-delay: 50ms;
+}
+
+#about .about-second-txt {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+}
 
 /* Section - Challenges */
 #challenges {
@@ -808,10 +849,9 @@ a {
     }
 }
 
-/* Animations - taglines */
+/* Animations - Taglines */
 
-
-@-webkit-keyframes taglinesRise {
+@-webkit-keyframes animRise {
     0% {
         opacity: 0;
         -webkit-transform: translateY(0.5em);
@@ -825,7 +865,7 @@ a {
     }
 }
 
-@keyframes taglinesRise {
+@keyframes animRise {
     0% {
         opacity: 0;
         -webkit-transform: translateY(0.5em);
@@ -836,5 +876,31 @@ a {
         opacity: 1;
         -webkit-transform: translateY(0);
         transform: translateY(0)
+    }
+}
+
+/* Amimation - Ease Left */
+
+@-webkit-keyframes animEaseLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(5rem);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+
+@keyframes animEaseLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }

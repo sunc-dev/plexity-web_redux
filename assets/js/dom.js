@@ -15,19 +15,37 @@ ScrollOut({
 
 });
 
-var taglines = document.querySelector(".about-prime-head");
-taglines.setAttribute('data-scroll', '');
+var primeTag = document.querySelector(".about-prime-head");
+primeTag.setAttribute('data-scroll', '');
 
 ScrollOut({
-    onShown: function (taglines) {
+    onShown: function (primeTag) {
         // remove the class
-        taglines.classList.remove("animation-go");
+        primeTag.classList.remove("animation-go");
 
         // force reflow
-        void taglines.offsetWidth;
+        void primeTag.offsetWidth;
 
         // re-add the animated cl
-        taglines.classList.add("animation-go");
+        primeTag.classList.add("animation-go");
+    }
+
+});
+
+
+var secondTag = document.querySelector(".about-second-head");
+secondTag.setAttribute('data-scroll', '');
+
+ScrollOut({
+    onShown: function (secondTag) {
+        // remove the class
+        secondTag.classList.remove("animation-go");
+
+        // force reflow
+        void secondTag.offsetWidth;
+
+        // re-add the animated cl
+        secondTag.classList.add("animation-go");
     }
 
 });
