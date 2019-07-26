@@ -37,7 +37,10 @@ a {
     color: #000;
 }
 
-
+ol,
+ul {
+    list-style: none
+}
 
 /* Header - Navigation - Landing */
 
@@ -468,14 +471,6 @@ a {
 }
 
 
-#about .pts-matte {
-    padding: 80px 0
-}
-
-#about .pts-content {
-    margin-top: 30px;
-}
-
 #about .head-second {
     font-weight: 900;
 }
@@ -508,6 +503,40 @@ a {
     margin-bottom: 40px;
 
 }
+
+
+#about .pts-matte {
+    padding: 66px 16px;
+}
+
+#about .pts-content {
+    margin-top: 30px;
+}
+
+#about .about-pts {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+#about .pts-matte {
+    padding: 66px 16px;
+}
+
+#about .pts-content {
+    margin-top: 30px;
+}
+
+#about .pts-content-icon_container {
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+
+}
+
 
 /* Section - Challenges */
 #challenges {
