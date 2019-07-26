@@ -420,7 +420,7 @@ ul {
 
 /* Section - About */
 #about {
-    padding: 0px 0 0px 0;
+    padding: 66px 0 0px 0;
 }
 
 #about .about-primary-canvas {
@@ -641,8 +641,8 @@ ul {
     width: 49%;
     position: relative;
     z-index: 2;
-    -webkit-transform: translateY(5%);
-    transform: translateY(5%);
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%);
 
 }
 
@@ -1212,7 +1212,7 @@ ul {
 
 @-webkit-keyframes transitionLeft {
     0% {
-        -webkit-transform: translateX(5rem);
+        -webkit-transform: translateX(6rem);
     }
 
     100% {
@@ -1222,7 +1222,7 @@ ul {
 
 @keyframes transitionLeft {
     0% {
-        transform: translateX(5rem);
+        transform: translateX(6rem);
     }
 
     100% {
