@@ -1,4 +1,4 @@
-var keylines = document.querySelector(".keylines-matte");
+var keylines = document.querySelector(".keylines-canvas");
 keylines.setAttribute('data-scroll', '');
 
 ScrollOut({
