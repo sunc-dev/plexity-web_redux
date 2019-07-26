@@ -1,3 +1,5 @@
+/*Animation - Header/Landing/Hero */
+
 var keylines = document.querySelector(".keylines-canvas");
 keylines.setAttribute('data-scroll', '');
 
@@ -14,6 +16,9 @@ ScrollOut({
     }
 
 });
+
+/*Animation - About - Mission */
+
 
 var primeTag = document.querySelector(".about-prime-head");
 primeTag.setAttribute('data-scroll', '');
@@ -32,6 +37,8 @@ ScrollOut({
 
 });
 
+/*Animation - About - How */
+
 
 var secondTag = document.querySelector(".about-second-head");
 secondTag.setAttribute('data-scroll', '');
@@ -49,3 +56,25 @@ ScrollOut({
     }
 
 });
+
+
+/*Animation - About - Approach */
+
+
+var secondTag = document.querySelector(".about-second-head");
+secondTag.setAttribute('data-scroll', '');
+
+ScrollOut({
+    onShown: function (secondTag) {
+        // remove the class
+        secondTag.classList.remove("animation-go");
+
+        // force reflow
+        void secondTag.offsetWidth;
+
+        // re-add the animated cl
+        secondTag.classList.add("animation-go");
+    }
+
+});
+

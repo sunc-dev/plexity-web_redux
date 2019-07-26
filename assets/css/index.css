@@ -578,19 +578,22 @@ ul {
     z-index: 3;
 }
 
+.approach-canvas {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    z-index: 1;
+    align-items: start;
+    padding: 88px 0 120px 0;
+}
+
 #approach .subhead-txt {
     text-transform: uppercase;
     font-size: .85rem;
 }
 
-
-#approach .title-section {
-    position: relative;
-    display: flex;
-    z-index: 1;
-    align-items: start;
-    padding: 0;
-    margin: 0px 0px 10% 0px
+#approach .content-body {
+    display: grid;
 }
 
 [name="approach-header"] .content-body {
@@ -632,30 +635,36 @@ ul {
     align-self: end;
 }
 
-.approach-canvas {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    z-index: 1;
-    align-items: start;
-    padding: 88px 0 120px 0;
-}
-
 [name="approach-header"] .img-canvas {
+    display: flex;
+    justify-content: flex-end;
     width: 49%;
     position: relative;
     z-index: 2;
     -webkit-transform: translateY(5%);
     transform: translateY(5%);
-    -webkit-box-shadow: 0 60px 120px rgba(0, 0, 0, 0.6);
-    box-shadow: 0 60px 120px rgba(0, 0, 0, 0.6);
+
 }
 
+
 [name="approach-header"] .img-canvas .approach-img {
-    display: flex;
     width: 90%;
     height: auto;
-    box-shadow: 0 60px 120px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 60px 120px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 60px 120px rgba(0, 0, 0, 0.4);
+}
+
+
+
+[name="approach-header"] .img-canvas.animation-go .approach-img {
+    -webkit-animation: transitionLeft;
+    animation: transitionLeft;
+    -webkit-animation-duration: 3400ms;
+    animation-duration: 3400ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 50ms;
+    animation-delay: 50ms;
 }
 
 [name="approach-header"] .approach-canvas .media {
@@ -677,11 +686,10 @@ ul {
     z-index: 2;
     -webkit-transform: translateY(5%);
     transform: translateY(5%);
-    -webkit-box-shadow: 0 60px 120px rgba(0, 0, 0, 0.6);
-    box-shadow: 0 60px 120px rgba(0, 0, 0, 0.6);
+
 }
 
-[name="approach-header"] .approach-content-area {
+[name="approach-header"] .approach-content_container {
     background: #3498db;
     color: white;
     width: 51%;
@@ -689,39 +697,40 @@ ul {
     position: relative;
 }
 
-[name="approach-header"] .approach-content-area .fill-area {
-    padding: 17% 0 15%;
+[name="approach-header"] .approach-content_container .fill-area {
+    padding: 17% 0 0 0
 }
 
-#approach .fill-area .content {
+#approach .fill-area .content-body {
     margin-right: calc((90vw - calc(992 * 1px)) / 2);
     margin-left: 18%;
 }
 
 @media (max-width: 1142px) {
-    [name="approach-header"] .approach-content-area .content {
+    [name="approach-header"] .approach-content_container .content-body {
         margin-right: calc((100vw * 0.13) / 2);
     }
 }
 
 @media (max-width: 1099px) {
-    [name="approach-header"] .approach-content-area .content {
+    [name="approach-header"] .approach-content_container .content-body {
         margin-left: 15%;
     }
 }
 
 @media (max-width: 850px) {
-    [name="approach-header"] .approach-content-area .content {
+    [name="approach-header"] .approach-content_container .content-body {
         margin-left: 11%;
     }
 }
 
-[name="approach-header"] p {
-    font-size: 1.1875rem;
+[name="approach-header"] .app-content-txt {
+    font-size: 1.375rem;
+    font-weight: 300;
     line-height: 1.6;
 }
 
-[name="approach-header"] .approach-content-area .fill-area:before {
+[name="approach-header"] .approach-content_container .fill-area:before {
     content: "";
     display: block;
     position: absolute;
@@ -746,27 +755,25 @@ ul {
         width: calc(100vw - 7.5%);
     }
 
-    [name="approach-header"] .approach-content-area {
+    [name="approach-header"] .approach-content_container {
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
         width: calc(100% - 7.5%);
         margin-left: 7.5%;
     }
 
-    [name="approach-header"] .approach-content-area .fill-area {
+    [name="approach-header"] .approach-content_container .fill-area {
         padding: 4% 0 19%;
     }
 
-    [name="approach-header"] .approach-content-area .fill-area:before {
+    [name="approach-header"] .approach-content_container .fill-area:before {
         display: none;
     }
 
-    [name="approach-header"] .approach-content-area .fill-area:after {
+    [name="approach-header"] .approach-content_container .fill-area:after {
         content: "";
         display: block;
         position: absolute;
-        top: 0;
-        left: 0;
         width: 50px;
         background: #3498db;
         height: 70px;
@@ -778,7 +785,7 @@ ul {
         box-shadow: 0 2px 0 #3498db;
     }
 
-    [name="approach-header"] .approach-content-area .content {
+    [name="approach-header"] .approach-content_container .content {
         margin: 0;
         margin-right: 10%;
         margin-left: 7%;
@@ -786,26 +793,26 @@ ul {
 }
 
 @media (max-width: 760px) and (min-width: 570px) {
-    [name="approach-header"] .approach-content-area .fill-area {
+    [name="approach-header"] .approach-content_container .fill-area {
         padding: 0 0 13%;
     }
 
-    [name="approach-header"] .approach-content-area .fill-area:after {
+    [name="approach-header"] .approach-content_container .fill-area:after {
         height: 60%;
     }
 }
 
 @media (max-width: 760px) {
-    [name="approach-header"] .subscript-title {
+    [name="approach-header"] .subhead-txt {
         margin-top: 20px;
         grid-column: 1/12;
     }
 
-    [name="approach-header"] .heading-title {
+    [name="approach-header"] .hero-head {
         grid-column: 1/6;
     }
 
-    [name="approach-header"] .sub-content-sm {
+    [name="approach-header"] .app-content-sm {
         grid-column: 1/8;
     }
 }
@@ -1197,6 +1204,28 @@ ul {
 
     100% {
         opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animation - Slide Left */
+
+@-webkit-keyframes transitionLeft {
+    0% {
+        -webkit-transform: translateX(5rem);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+    }
+}
+
+@keyframes transitionLeft {
+    0% {
+        transform: translateX(5rem);
+    }
+
+    100% {
         transform: translateX(0);
     }
 }
