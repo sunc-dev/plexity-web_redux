@@ -488,7 +488,6 @@ ul {
 }
 
 #about .about-second-head .head-second span:last-of-type {
-    transform: translateX(1.375rem);
     opacity: 0;
 }
 
@@ -540,6 +539,8 @@ ul {
 }
 
 #about .pts-content-txt_container {
+    display: grid;
+    align-items: center;
     min-height: 150px;
 }
 
@@ -561,7 +562,11 @@ ul {
     font-size: .85rem;
 }
 
-#challenges .txt-content {}
+#challenges .pts-content-txt_container {
+    display: grid;
+    align-items: center;
+}
+
 
 #challenges .about-pts {
     font-weight: 300;
@@ -646,7 +651,6 @@ ul {
 
 }
 
-
 [name="approach-header"] .img-canvas .approach-img {
     width: 90%;
     height: auto;
@@ -680,21 +684,29 @@ ul {
     text-align: center;
 }
 
-[name="approach-header"] .img-canvas {
-    width: 49%;
-    position: relative;
-    z-index: 2;
-    -webkit-transform: translateY(5%);
-    transform: translateY(5%);
 
-}
+
 
 [name="approach-header"] .approach-content_container {
+    display: flex;
+    position: relative;
     background: #3498db;
     color: white;
     width: 51%;
     z-index: 1;
-    position: relative;
+    transform: translateY(10em);
+    opacity: 0;
+}
+
+[name="approach-header"] .approach-content_container.animation-go {
+    -webkit-animation: animSlideUp;
+    animation: animSlideUp;
+    -webkit-animation-duration: 4400ms;
+    animation-duration: 4400ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 100ms;
+    animation-delay: 100ms;
 }
 
 [name="approach-header"] .approach-content_container .fill-area {
@@ -734,8 +746,6 @@ ul {
     content: "";
     display: block;
     position: absolute;
-    left: 0;
-    bottom: 0;
     width: 10px;
     background: #3498db;
     height: 100%;
@@ -1173,6 +1183,34 @@ ul {
         opacity: 0;
         -webkit-transform: translateY(0.5em);
         transform: translateY(0.5em)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+@-webkit-keyframes animSlideUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(10em);
+        transform: translateY(10em)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+@keyframes animSlideUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(10em);
+        transform: translateY(10em)
     }
 
     100% {

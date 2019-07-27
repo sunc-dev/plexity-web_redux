@@ -75,3 +75,26 @@ ScrollOut({
 
 });
 
+/*Animation - New - Begin
+
+var appContainer = document.querySelector(".approach-content_container");
+appContainer.setAttribute('data-scroll', '');
+
+ScrollOut({
+    onShown: function (appContainer) {
+        // remove the class
+        appContainer.classList.remove("animation-go");
+
+        // force reflow
+        void appContainer.offsetWidth;
+
+        // re-add the animated cl
+        appContainer.classList.add("animation-go");
+    }
+
+});
+
+*/
+
+
+
