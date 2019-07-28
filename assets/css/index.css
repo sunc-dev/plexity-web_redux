@@ -562,10 +562,11 @@ ul {
     font-size: .85rem;
 }
 
-#challenges .pts-content-txt_container {
+#challenges .grid-wrapper_content {
     display: grid;
-    align-items: center;
+    justify-content: center;
 }
+
 
 
 #challenges .about-pts {
@@ -654,8 +655,7 @@ ul {
 [name="approach-header"] .img-canvas .approach-img {
     width: 90%;
     height: auto;
-    -webkit-box-shadow: 0 60px 120px rgba(0, 0, 0, 0.4);
-    box-shadow: 0 60px 120px rgba(0, 0, 0, 0.4);
+
 }
 
 
@@ -695,7 +695,6 @@ ul {
     width: 51%;
     z-index: 1;
     transform: translateY(10em);
-    opacity: 0;
 }
 
 [name="approach-header"] .approach-content_container.animation-go {
@@ -746,6 +745,8 @@ ul {
     content: "";
     display: block;
     position: absolute;
+    left: 0;
+    bottom: 0;
     width: 10px;
     background: #3498db;
     height: 100%;
@@ -754,7 +755,9 @@ ul {
     -webkit-box-shadow: 2px 0 0 #3498db;
     box-shadow: 2px 0 0 #3498db;
     width: 13%;
+    opacity: 0;
 }
+
 
 @media (max-width: 760px) {
     [name="approach-header"] .approach-canvas {
@@ -784,6 +787,8 @@ ul {
         content: "";
         display: block;
         position: absolute;
+        top: 0;
+        left: 0;
         width: 50px;
         background: #3498db;
         height: 70px;
@@ -825,6 +830,12 @@ ul {
     [name="approach-header"] .app-content-sm {
         grid-column: 1/8;
     }
+}
+
+/* Section - Technology */
+
+#technology {
+    padding: 80px 0 80px 0;
 }
 
 /* Section - Projects */
@@ -1226,11 +1237,13 @@ ul {
     0% {
         opacity: 0;
         -webkit-transform: translateX(5rem);
+
     }
 
     100% {
         opacity: 1;
         -webkit-transform: translateX(0);
+
     }
 }
 
@@ -1251,19 +1264,27 @@ ul {
 @-webkit-keyframes transitionLeft {
     0% {
         -webkit-transform: translateX(6rem);
+        -webkit-box-shadow: 0 60px 120px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 60px 120px rgba(0, 0, 0, 0.4);
     }
 
     100% {
         -webkit-transform: translateX(0);
+        -webkit-box-shadow: 0 60px 120px rgba(0, 0, 0, 0);
+        box-shadow: 0 60px 120px rgba(0, 0, 0, 0);
     }
 }
 
 @keyframes transitionLeft {
     0% {
         transform: translateX(6rem);
+        -webkit-box-shadow: 0 60px 120px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 60px 120px rgba(0, 0, 0, 0.4);
     }
 
     100% {
         transform: translateX(0);
+        -webkit-box-shadow: 0 60px 120px rgba(0, 0, 0, 0);
+        box-shadow: 0 60px 120px rgba(0, 0, 0, 0);
     }
 }

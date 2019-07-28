@@ -71,11 +71,13 @@ ScrollOut({
 
         // re-add the animated cl
         imgCanvas.classList.add("animation-go");
+
+
     }
 
 });
 
-/*Animation - New - Begin
+/*Animation - New - Begin*/
 
 var appContainer = document.querySelector(".approach-content_container");
 appContainer.setAttribute('data-scroll', '');
@@ -94,7 +96,6 @@ ScrollOut({
 
 });
 
-*/
 
 
 
