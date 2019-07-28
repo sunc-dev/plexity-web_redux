@@ -62,6 +62,7 @@ var imgCanvas = document.querySelector(".img-canvas");
 imgCanvas.setAttribute('data-scroll', '');
 
 ScrollOut({
+    threshold: .5,
     onShown: function (imgCanvas) {
         // remove the class
         imgCanvas.classList.remove("animation-go");
