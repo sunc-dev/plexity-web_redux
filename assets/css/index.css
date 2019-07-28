@@ -21,19 +21,19 @@ h1 {
 }
 
 h2 {
-    font-size: 4.025rem;
+    font-size: 3.125rem;
 }
 
 h3 {
-    font-size: 3.525rem;
+    font-size: 2.825rem;
 }
 
 h4 {
-    font-size: 3.025rem;
+    font-size: 2.225rem;
 }
 
 h5 {
-    font-size: 1.525rem;
+    font-size: 1.425rem;
 }
 
 a {
@@ -217,9 +217,7 @@ ul {
 
 @media (min-width:992px) {
     .landing-p .hero h1 {
-        margin-top: 190px;
         margin-bottom: 24px;
-        line-height: 1.2;
     }
 }
 
@@ -522,12 +520,13 @@ ul {
 
 #about .pts-canvas {
     display: block;
-    padding: 66px 16px;
+    padding: 0px 16px;
 }
 
 #about .pts-content {
     display: flex;
     margin-top: 30px;
+    padding-bottom: 20px;
 }
 
 #about .pts-content-icon_container {
@@ -541,7 +540,11 @@ ul {
 #about .pts-content-txt_container {
     display: grid;
     align-items: center;
-    min-height: 150px;
+}
+
+#about .pts-content_label {
+    font-size: 1.225rem;
+    font-weight: 400;
 }
 
 
@@ -557,6 +560,11 @@ ul {
     padding: 80px 0;
 }
 
+#challenges .challenge-head_container {
+    display: grid;
+    justify-items: left;
+}
+
 #challenges .subhead-txt {
     text-transform: uppercase;
     font-size: .85rem;
@@ -565,6 +573,7 @@ ul {
 #challenges .grid-wrapper_content {
     display: grid;
     justify-content: center;
+    align-items: center;
 }
 
 
@@ -700,8 +709,8 @@ ul {
 [name="approach-header"] .approach-content_container.animation-go {
     -webkit-animation: animSlideUp;
     animation: animSlideUp;
-    -webkit-animation-duration: 4400ms;
-    animation-duration: 4400ms;
+    -webkit-animation-duration: 3400ms;
+    animation-duration: 3400ms;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     -webkit-animation-delay: 100ms;
@@ -709,12 +718,12 @@ ul {
 }
 
 [name="approach-header"] .approach-content_container .fill-area {
-    padding: 17% 0 0 0
+    padding: 17% 0 0 0;
 }
 
 #approach .fill-area .content-body {
     margin-right: calc((90vw - calc(992 * 1px)) / 2);
-    margin-left: 18%;
+    margin-left: 20%;
 }
 
 @media (max-width: 1142px) {
@@ -755,7 +764,6 @@ ul {
     -webkit-box-shadow: 2px 0 0 #3498db;
     box-shadow: 2px 0 0 #3498db;
     width: 13%;
-    opacity: 0;
 }
 
 
@@ -773,6 +781,8 @@ ul {
         box-sizing: border-box;
         width: calc(100% - 7.5%);
         margin-left: 7.5%;
+        transform: translateX(4rem);
+
     }
 
     [name="approach-header"] .approach-content_container .fill-area {
@@ -799,12 +809,13 @@ ul {
         -webkit-box-shadow: 0 2px 0 #3498db;
         box-shadow: 0 2px 0 #3498db;
     }
+}
 
-    [name="approach-header"] .approach-content_container .content {
-        margin: 0;
-        margin-right: 10%;
-        margin-left: 7%;
-    }
+[name="approach-header"] .approach-content_container .content {
+    margin: 0;
+    margin-right: 10%;
+    margin-left: 7%;
+}
 }
 
 @media (max-width: 760px) and (min-width: 570px) {
@@ -833,14 +844,18 @@ ul {
 }
 
 /* Section - Technology */
-
 #technology {
-    padding: 80px 0 80px 0;
+    padding: 88px 0 0 0;
+}
+
+#technology .tech-head_container {
+    display: grid;
+    justify-items: center;
 }
 
 /* Section - Projects */
 #projects {
-    padding: 80px 0 0 0;
+    padding: 88px 0 0 0;
 }
 
 /* Project - Project Components */
@@ -1205,13 +1220,11 @@ ul {
 
 @-webkit-keyframes animSlideUp {
     0% {
-        opacity: 0;
         -webkit-transform: translateY(10em);
         transform: translateY(10em)
     }
 
     100% {
-        opacity: 1;
         -webkit-transform: translateY(0);
         transform: translateY(0)
     }
@@ -1219,13 +1232,11 @@ ul {
 
 @keyframes animSlideUp {
     0% {
-        opacity: 0;
         -webkit-transform: translateY(10em);
         transform: translateY(10em)
     }
 
     100% {
-        opacity: 1;
         -webkit-transform: translateY(0);
         transform: translateY(0)
     }
@@ -1277,7 +1288,7 @@ ul {
 
 @keyframes transitionLeft {
     0% {
-        transform: translateX(6rem);
+        transform: translateX(4rem);
         -webkit-box-shadow: 0 60px 120px rgba(0, 0, 0, 0.4);
         box-shadow: 0 60px 120px rgba(0, 0, 0, 0.4);
     }
