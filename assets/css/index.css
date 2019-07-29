@@ -294,7 +294,6 @@ ul {
 
 #master .keylines-canvas .keylines span {
     display: block;
-    margin-bottom: 0.125em;
     -webkit-transform: translateY(50px);
     transform: translateY(50px);
     opacity: 0
@@ -547,7 +546,12 @@ ul {
     font-weight: 400;
 }
 
-
+#about .circle {
+    color: #000;
+    position: absolute;
+    top: 150px;
+    left: calc(50% - 60px);
+}
 
 /* Section - Challenges */
 
@@ -674,10 +678,11 @@ ul {
     animation: transitionLeft;
     -webkit-animation-duration: 3400ms;
     animation-duration: 3400ms;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-delay: 50ms;
-    animation-delay: 50ms;
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+    -webkit-animation-delay: 25ms;
+    animation-delay: 25ms;
+    transition: ease-in;
 }
 
 [name="approach-header"] .approach-canvas .media {
@@ -1290,13 +1295,13 @@ ul {
 
 @-webkit-keyframes transitionLeft {
     0% {
-        -webkit-transform: translateX(6rem);
+        -webkit-transform: translateX(4rem);
         -webkit-box-shadow: 0 60px 120px rgba(0, 0, 0, 0.4);
         box-shadow: 0 60px 120px rgba(0, 0, 0, 0.4);
     }
 
     100% {
-        -webkit-transform: translateX(0);
+        -webkit-transform: translateX(0rem);
         -webkit-box-shadow: 0 60px 120px rgba(0, 0, 0, 0);
         box-shadow: 0 60px 120px rgba(0, 0, 0, 0);
     }
@@ -1310,7 +1315,7 @@ ul {
     }
 
     100% {
-        transform: translateX(0);
+        transform: translateX(0rem);
         -webkit-box-shadow: 0 60px 120px rgba(0, 0, 0, 0);
         box-shadow: 0 60px 120px rgba(0, 0, 0, 0);
     }

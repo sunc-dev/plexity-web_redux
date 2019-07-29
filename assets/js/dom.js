@@ -42,6 +42,7 @@ var secondTag = document.querySelector(".about-second-head");
 secondTag.setAttribute('data-scroll', '');
 
 ScrollOut({
+
     onShown: function (secondTag) {
         // remove the class
         secondTag.classList.remove("animation-go");
@@ -62,7 +63,6 @@ var imgCanvas = document.querySelector(".img-canvas");
 imgCanvas.setAttribute('data-scroll', '');
 
 ScrollOut({
-    threshold: .5,
     onShown: function (imgCanvas) {
         // remove the class
         imgCanvas.classList.remove("animation-go");
