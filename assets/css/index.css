@@ -369,12 +369,26 @@ ul {
     text-align: center;
 }
 
-.features-boxed .item .box {
+.features-boxed .item .item-box_container {
     text-align: center;
     padding: 30px;
     background-color: #fff;
     margin-bottom: 30px;
 }
+
+.features-boxed .item .item-box_container.animation-go {
+    -webkit-animation: objectRise;
+    animation: objectRise;
+    -webkit-animation-duration: 1400ms;
+    animation-duration: 1400ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 100ms;
+    animation-delay: 100ms
+}
+
+
+
 
 .features-boxed .item .icon {
     font-size: 60px;
@@ -1338,11 +1352,11 @@ ul {
 
 @keyframes objectRise {
     0% {
-        transform: translateX(4rem);
+        transform: translateY(4rem);
 
     }
 
     100% {
-        transform: translateX(0rem);
+        transform: translateY(0rem);
     }
 }
