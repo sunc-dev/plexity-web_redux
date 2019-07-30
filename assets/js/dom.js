@@ -17,6 +17,7 @@ ScrollOut({
 
 });
 
+
 /*Animation - About - Mission */
 
 var primeTag = document.querySelector(".about-prime-head");

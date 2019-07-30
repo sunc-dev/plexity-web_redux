@@ -1320,3 +1320,31 @@ ul {
         box-shadow: 0 60px 120px rgba(0, 0, 0, 0);
     }
 }
+
+
+/* Animation - Slide Left */
+
+@-webkit-keyframes transitionLeft {
+    0% {
+        -webkit-transform: translateX(4rem);
+        -webkit-box-shadow: 0 60px 120px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 60px 120px rgba(0, 0, 0, 0.4);
+    }
+
+    100% {
+        -webkit-transform: translateX(0rem);
+        -webkit-box-shadow: 0 60px 120px rgba(0, 0, 0, 0);
+        box-shadow: 0 60px 120px rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes objectRIse {
+    0% {
+        transform: translateX(4rem);
+
+    }
+
+    100% {
+        transform: translateX(0rem);
+    }
+}
