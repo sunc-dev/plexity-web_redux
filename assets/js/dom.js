@@ -98,6 +98,25 @@ ScrollOut({
 
 });
 
+/*Animation - Blockchain - Points */
+
+var itembox = document.querySelector(".item-box_container");
+itembox.setAttribute('data-scroll', '');
+
+ScrollOut({
+    onShown: function (itembox) {
+        // remove the class
+        itembox.classList.remove("animation-ready");
+
+        // force reflow
+        void itembox.offsetWidth;
+
+        // re-add the animated cl
+        itembox.classList.add("animation-ready");
+    }
+
+});
+
 
 
 
