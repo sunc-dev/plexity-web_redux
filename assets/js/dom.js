@@ -98,9 +98,11 @@ ScrollOut({
 
 });
 
-/*Animation - Blockchain - Points */
 
-var itembox = document.querySelector(".item-box_container");
+/*Animation - Tech - Points*/
+
+
+var itembox = document.querySelector(".scene-1");
 itembox.setAttribute('data-scroll', '');
 
 ScrollOut({
@@ -118,5 +120,19 @@ ScrollOut({
 });
 
 
+var itembox2 = document.querySelector(".scene-2");
+itembox2.setAttribute('data-scroll', '');
 
+ScrollOut({
+    onShown: function (itembox2) {
+        // remove the class
+        itembox2.classList.remove("animation-ready");
 
+        // force reflow
+        void itembox2.offsetWidth;
+
+        // re-add the animated cl
+        itembox2.classList.add("animation-ready");
+    }
+
+});

@@ -363,7 +363,7 @@ ul {
     margin-bottom: 0;
 }
 
-.pts-items-canvas .features {
+.pts-items-canvas .items {
     padding: 50px 0;
 }
 
@@ -372,6 +372,7 @@ ul {
 }
 
 .pts-items-canvas .item .item-box_container {
+    display: block;
     text-align: center;
     padding: 30px;
     background-color: #fff;
@@ -379,7 +380,8 @@ ul {
 
 }
 
-.pts-items-canvas .item .item-box_container.animation-ready {
+
+.pts-items-canvas .scene-1.animation-ready .item .item-box_container {
     transform: translateY(4rem);
     -webkit-animation: objectRise;
     animation: objectRise;
@@ -392,6 +394,22 @@ ul {
     -webkit-animation-delay: 100ms;
     animation-delay: 100ms
 }
+
+.pts-items-canvas .scene-2.animation-ready .item .item-box_container {
+    transform: translateY(4rem);
+    -webkit-animation: objectRise;
+    animation: objectRise;
+    -webkit-animation-duration: 1600ms;
+    animation-duration: 1600ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-delay: 100ms;
+    animation-delay: 100ms
+}
+
+
 
 
 
