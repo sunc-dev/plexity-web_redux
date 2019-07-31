@@ -102,37 +102,19 @@ ScrollOut({
 /*Animation - Tech - Points*/
 
 
-var itembox = document.querySelector(".scene-1");
-itembox.setAttribute('data-scroll', '');
+var itembox = document.querySelectorAll(".scene-1");
+itembox.forEach(itembox => {
+    itembox.setAttribute('data-scroll', '');
+    ScrollOut({
+        onShown: function (itembox) {
+            // remove the class
+            itembox.classList.remove("animation-ready");
 
-ScrollOut({
-    onShown: function (itembox) {
-        // remove the class
-        itembox.classList.remove("animation-ready");
+            // force reflow
+            void itembox.offsetWidth;
 
-        // force reflow
-        void itembox.offsetWidth;
-
-        // re-add the animated cl
-        itembox.classList.add("animation-ready");
-    }
-
-});
-
-
-var itembox2 = document.querySelector(".scene-2");
-itembox2.setAttribute('data-scroll', '');
-
-ScrollOut({
-    onShown: function (itembox2) {
-        // remove the class
-        itembox2.classList.remove("animation-ready");
-
-        // force reflow
-        void itembox2.offsetWidth;
-
-        // re-add the animated cl
-        itembox2.classList.add("animation-ready");
-    }
-
+            // re-add the animated cl
+            itembox.classList.add("animation-ready");
+        }
+    });
 });

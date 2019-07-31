@@ -382,21 +382,7 @@ ul {
 
 
 .pts-items-canvas .scene-1.animation-ready .item .item-box_container {
-    transform: translateY(4rem);
-    -webkit-animation: objectRise;
-    animation: objectRise;
-    -webkit-animation-duration: 1600ms;
-    animation-duration: 1600ms;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -webkit-animation-delay: 100ms;
-    animation-delay: 100ms
-}
-
-.pts-items-canvas .scene-2.animation-ready .item .item-box_container {
-    transform: translateY(4rem);
+    transform: translateY(6em);
     -webkit-animation: objectRise;
     animation: objectRise;
     -webkit-animation-duration: 1600ms;
@@ -624,7 +610,24 @@ ul {
     align-items: center;
 }
 
+#challenges .content-list_canvas {
+    margin-top: 60px;
+}
 
+#challenges .chg-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center
+}
+
+#challenges .content-list_canvas .icon {
+    font-size: 30px;
+}
+
+#challenges .content-list_canvas .content-head {}
+
+#challenges .content-list_canvas .content-description {}
 
 #challenges .about-pts_txt {
     font-weight: 300;
@@ -1371,7 +1374,7 @@ ul {
 
 @-webkit-keyframes objectRise {
     0% {
-        transform: translateX(4rem);
+        transform: translateX(6rem);
 
     }
 
@@ -1383,8 +1386,7 @@ ul {
 
 @keyframes objectRise {
     0% {
-        transform: translateY(4rem);
-
+        transform: translateY(6rem);
     }
 
     100% {
