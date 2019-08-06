@@ -46,6 +46,8 @@ ul {
     list-style: none
 }
 
+
+
 /* Header - Navigation - Landing */
 
 .landing-p {
@@ -276,9 +278,13 @@ ul {
 }
 
 /* Shared Components */
-
-.hero-canvas {
+F .hero-canvas {
     display: relative;
+}
+
+.subhead-txt {
+    text-transform: uppercase;
+    font-size: .85rem;
 }
 
 .hero-head {
@@ -452,7 +458,7 @@ ul {
 
 #about .about-primary-canvas {
     text-align: center;
-    padding: 80px 0;
+    padding: 100px 0;
 }
 
 #about .subhead-txt {
@@ -618,8 +624,10 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center
+    align-content: center;
+    align-items: center
 }
+
 
 #challenges .content-list_canvas .icon {
     font-size: 30px;
@@ -627,7 +635,9 @@ ul {
 
 #challenges .content-list_canvas .content-head {}
 
-#challenges .content-list_canvas .content-description {}
+#challenges .content-list_canvas .content-description {
+    align-self: center;
+}
 
 #challenges .about-pts_txt {
     font-weight: 300;
@@ -920,6 +930,15 @@ ul {
     margin-bottom: 40px;
     text-align: center;
 }
+
+.blk-items_canvas {
+    padding: 100px 0 0 0;
+}
+
+.blk-content_container {
+    padding: 40px 0;
+}
+
 
 /* Section - Projects */
 #projects {
