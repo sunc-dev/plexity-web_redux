@@ -1114,8 +1114,7 @@ F .hero-canvas {
     padding-top: 50px;
 }
 
-.team-clean .item .name {
-    font-weight: bold;
+.team-clean .item .name-head {
     margin-top: 28px;
     margin-bottom: 8px;
     color: inherit;
