@@ -616,6 +616,10 @@ F .hero-canvas {
     align-items: center;
 }
 
+#challenges .grid-wrapper_content .pts-content_txt_container {
+    margin-left: 30px;
+}
+
 #challenges .content-list_canvas {
     margin-top: 60px;
 }
@@ -633,10 +637,14 @@ F .hero-canvas {
     font-size: 30px;
 }
 
-#challenges .content-list_canvas .content-head {}
+#challenges .content-list_canvas .content-head {
+    margin-top: 2rem;
+    font-size: 1.375rem;
+}
 
 #challenges .content-list_canvas .content-description {
     align-self: center;
+    text-align: center;
 }
 
 #challenges .about-pts_txt {
