@@ -1,5 +1,4 @@
 @import url(http://db.onlinewebfonts.com/c/65482afbeb61af43c403d0fec1fdb679?family=Neo+Sans+Pro);
-
 body {
     font-size: 100%;
     text-rendering: optimizeLegibility;
@@ -45,7 +44,6 @@ ol,
 ul {
     list-style: none
 }
-
 
 
 /* Header - Navigation - Landing */
@@ -242,7 +240,7 @@ ul {
 }
 
 .landing-p .iphone-mockup img.device {
-    width: 100%;
+    width: 115%;
     height: auto;
 }
 
@@ -259,6 +257,7 @@ ul {
     background: url(../../assets/img/screen-content-iphone-6.jpg);
     background-size: cover;
     background-position: center;
+    transform: translateX(-60px);
 }
 
 .landing-p .iphone-mockup .screen:before {
@@ -277,7 +276,9 @@ ul {
     border-radius: 4px;
 }
 
+
 /* Shared Components */
+
 F .hero-canvas {
     display: relative;
 }
@@ -292,7 +293,7 @@ F .hero-canvas {
 }
 
 #master .keylines-canvas {
-    margin: 40px 0;
+    margin: 42px 0;
 }
 
 #master .keylines-canvas .keylines {
@@ -323,16 +324,13 @@ F .hero-canvas {
     animation-delay: 400ms
 }
 
-
 #master .keylines-canvas.animation-go .keylines span:nth-of-type(3) {
     -webkit-animation-delay: 700ms;
     animation-delay: 700ms
 }
 
-
 .hero-content {
     align-self: center;
-
 }
 
 .pts-items-canvas {
@@ -383,9 +381,7 @@ F .hero-canvas {
     padding: 30px;
     background-color: #fff;
     margin-bottom: 30px;
-
 }
-
 
 .pts-items-canvas .scene-1.animation-ready .item .item-box_container {
     transform: translateY(6em);
@@ -400,11 +396,6 @@ F .hero-canvas {
     -webkit-animation-delay: 100ms;
     animation-delay: 100ms
 }
-
-
-
-
-
 
 .pts-items-canvas .item .icon {
     font-size: 60px;
@@ -437,7 +428,9 @@ F .hero-canvas {
     padding: 30px 0;
 }
 
+
 /* Button - Components */
+
 .btn-canvas a {
     color: #fff;
     font-weight: 500;
@@ -451,7 +444,9 @@ F .hero-canvas {
     text-transform: uppercase;
 }
 
+
 /* Section - About */
+
 #about {
     padding: 66px 0 0px 0;
 }
@@ -498,7 +493,6 @@ F .hero-canvas {
     width: 90%;
     margin: 0 auto;
     margin-bottom: 40px;
-
 }
 
 @media (min-width: 576px) {
@@ -510,7 +504,6 @@ F .hero-canvas {
 #about .about-second-canvas {
     padding: 80px 0
 }
-
 
 #about .head-second {
     font-weight: 900;
@@ -541,10 +534,7 @@ F .hero-canvas {
     line-height: 1.4;
     margin: 0 auto;
     margin-bottom: 40px;
-
 }
-
-
 
 #about .about-pts {
     font-weight: 300;
@@ -589,6 +579,7 @@ F .hero-canvas {
     left: calc(50% - 60px);
 }
 
+
 /* Section - Challenges */
 
 #challenges {
@@ -632,7 +623,6 @@ F .hero-canvas {
     align-items: center
 }
 
-
 #challenges .content-list_canvas .icon {
     font-size: 30px;
 }
@@ -653,6 +643,7 @@ F .hero-canvas {
     line-height: 1.4;
     margin: 0 auto;
 }
+
 
 /* Section - Approach */
 
@@ -727,16 +718,12 @@ F .hero-canvas {
     z-index: 2;
     -webkit-transform: translateY(10%);
     transform: translateY(10%);
-
 }
 
 [name="approach-header"] .img-canvas .approach-img {
     width: 90%;
     height: auto;
-
 }
-
-
 
 [name="approach-header"] .img-canvas.animation-go .approach-img {
     -webkit-animation: transitionLeft;
@@ -762,9 +749,6 @@ F .hero-canvas {
     order: 2;
     text-align: center;
 }
-
-
-
 
 [name="approach-header"] .approach-content_container {
     display: flex;
@@ -836,33 +820,26 @@ F .hero-canvas {
     width: 13%;
 }
 
-
 @media (max-width: 760px) {
     [name="approach-header"] .approach-canvas {
         display: block;
     }
-
     [name="approach-header"] .img-canvas .approach-img {
         width: calc(100vw - 7.5%);
     }
-
     [name="approach-header"] .approach-content_container {
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
         width: calc(100% - 7.5%);
         margin-left: 7.5%;
         transform: translateX(4rem);
-
     }
-
     [name="approach-header"] .approach-content_container .fill-area {
         padding: 4% 0 19%;
     }
-
     [name="approach-header"] .approach-content_container .fill-area:before {
         display: none;
     }
-
     [name="approach-header"] .approach-content_container .fill-area:after {
         content: "";
         display: block;
@@ -887,12 +864,10 @@ F .hero-canvas {
     margin-left: 7%;
 }
 
-
 @media (max-width: 760px) and (min-width: 570px) {
     [name="approach-header"] .approach-content_container .fill-area {
         padding: 0 0 13%;
     }
-
     [name="approach-header"] .approach-content_container .fill-area:after {
         height: 60%;
     }
@@ -903,17 +878,17 @@ F .hero-canvas {
         margin-top: 20px;
         grid-column: 1/12;
     }
-
     [name="approach-header"] .hero-head {
         grid-column: 1/6;
     }
-
     [name="approach-header"] .app-content-sm {
         grid-column: 1/8;
     }
 }
 
+
 /* Section - Technology */
+
 #tech {
     padding: 88px 0 0 0;
 }
@@ -926,7 +901,6 @@ F .hero-canvas {
 
 #tech .tech-head_container span {
     font-size: 4.075rem;
-
 }
 
 #tech .tech-content_txt {
@@ -949,11 +923,14 @@ F .hero-canvas {
 
 
 /* Section - Projects */
+
 #projects {
     padding: 88px 0 0 0;
 }
 
+
 /* Project - Project Components */
+
 .highlight-phone {
     color: #313437;
     background-color: #eef4f7;
@@ -1064,13 +1041,15 @@ F .hero-canvas {
 }
 
 
-
 /* Section - Team */
+
 #team {
     padding: 80px 0 0 0;
 }
 
+
 /* Team - Profile Components */
+
 .team-clean {
     color: #313437;
     background-color: #fff;
@@ -1156,6 +1135,7 @@ F .hero-canvas {
 
 
 /* Footer - Contact */
+
 .footer-dark {
     padding: 50px 0;
     color: #f0f9ff;
@@ -1248,11 +1228,6 @@ F .hero-canvas {
 }
 
 
-
-
-
-
-
 /* Animations - Keylines */
 
 @-webkit-keyframes keylinesRise {
@@ -1261,7 +1236,6 @@ F .hero-canvas {
         transform: translateY(50px);
         opacity: 0
     }
-
     100% {
         -webkit-transform: translateY(0px);
         transform: translateY(0px);
@@ -1275,13 +1249,13 @@ F .hero-canvas {
         transform: translateY(50px);
         opacity: 0
     }
-
     100% {
         -webkit-transform: translateY(0px);
         transform: translateY(0px);
         opacity: 1
     }
 }
+
 
 /* Animations - Taglines */
 
@@ -1291,7 +1265,6 @@ F .hero-canvas {
         -webkit-transform: translateY(0.5em);
         transform: translateY(0.5em)
     }
-
     100% {
         opacity: 1;
         -webkit-transform: translateY(0);
@@ -1305,7 +1278,6 @@ F .hero-canvas {
         -webkit-transform: translateY(0.5em);
         transform: translateY(0.5em)
     }
-
     100% {
         opacity: 1;
         -webkit-transform: translateY(0);
@@ -1318,7 +1290,6 @@ F .hero-canvas {
         -webkit-transform: translateY(10em);
         transform: translateY(10em)
     }
-
     100% {
         -webkit-transform: translateY(0);
         transform: translateY(0)
@@ -1330,12 +1301,12 @@ F .hero-canvas {
         -webkit-transform: translateY(10em);
         transform: translateY(10em)
     }
-
     100% {
         -webkit-transform: translateY(0);
         transform: translateY(0)
     }
 }
+
 
 /* Amimation - Ease Left */
 
@@ -1343,13 +1314,10 @@ F .hero-canvas {
     0% {
         opacity: 0;
         -webkit-transform: translateX(5rem);
-
     }
-
     100% {
         opacity: 1;
         -webkit-transform: translateX(0);
-
     }
 }
 
@@ -1358,12 +1326,12 @@ F .hero-canvas {
         opacity: 0;
         transform: translateX(5rem);
     }
-
     100% {
         opacity: 1;
         transform: translateX(0);
     }
 }
+
 
 /* Animation - Slide Left */
 
@@ -1373,7 +1341,6 @@ F .hero-canvas {
         -webkit-box-shadow: 0 60px 120px rgba(0, 0, 0, 0.4);
         box-shadow: 0 60px 120px rgba(0, 0, 0, 0.4);
     }
-
     100% {
         -webkit-transform: translateX(0rem);
         -webkit-box-shadow: 0 60px 120px rgba(0, 0, 0, 0);
@@ -1387,7 +1354,6 @@ F .hero-canvas {
         -webkit-box-shadow: 0 60px 120px rgba(0, 0, 0, 0.4);
         box-shadow: 0 60px 120px rgba(0, 0, 0, 0.4);
     }
-
     100% {
         transform: translateX(0rem);
         -webkit-box-shadow: 0 60px 120px rgba(0, 0, 0, 0);
@@ -1401,12 +1367,9 @@ F .hero-canvas {
 @-webkit-keyframes objectRise {
     0% {
         transform: translateX(6rem);
-
     }
-
     100% {
         transform: translateX(0rem);
-
     }
 }
 
@@ -1414,7 +1377,6 @@ F .hero-canvas {
     0% {
         transform: translateY(6rem);
     }
-
     100% {
         transform: translateY(0rem);
     }
