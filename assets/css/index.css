@@ -49,7 +49,7 @@ ul {
 /* Header - Navigation - Landing */
 
 .landing-p {
-    background: linear-gradient(135deg, #172a74, #21a9af);
+    background: #fff;
     background-color: #184e8e;
     padding-bottom: 80px;
     font-family: 'Lato', sans-serif;
@@ -240,7 +240,7 @@ ul {
 }
 
 .landing-p .iphone-mockup img.device {
-    width: 115%;
+    width: 100%;
     height: auto;
 }
 
@@ -257,7 +257,6 @@ ul {
     background: url(../../assets/img/screen-content-iphone-6.jpg);
     background-size: cover;
     background-position: center;
-    transform: translateX(-60px);
 }
 
 .landing-p .iphone-mockup .screen:before {
@@ -293,7 +292,7 @@ F .hero-canvas {
 }
 
 #master .keylines-canvas {
-    margin: 42px 0;
+    margin: 40px 0;
 }
 
 #master .keylines-canvas .keylines {
