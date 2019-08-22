@@ -453,9 +453,9 @@ F .hero-canvas {
 #about .about-primary-canvas {
     display: block;
     text-align: center;
-    padding: 100px 0;
+    padding: 25px 0;
     overflow: hidden;
-    height: 899px;
+    height: 870px;
 }
 
 #about .subhead-txt {
@@ -621,7 +621,7 @@ F .hero-canvas {
     height: auto;
 }
 
-#about .screen-mockup.animation-go img.screens-3 {
+#about .screens-mockup.animation-go img.screens-1 {
     -webkit-animation: keylinesRise;
     animation: keylinesRise;
     -webkit-animation-duration: 1400ms;
@@ -631,6 +631,29 @@ F .hero-canvas {
     -webkit-animation-delay: 100ms;
     animation-delay: 100ms
 }
+
+#about .screens-mockup.animation-go img.screens-2 {
+    -webkit-animation: keylinesRise;
+    animation: keylinesRise;
+    -webkit-animation-duration: 1400ms;
+    animation-duration: 1400ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 200ms;
+    animation-delay: 200ms
+}
+
+#about .screens-mockup.animation-go img.screens-3 {
+    -webkit-animation: keylinesRise;
+    animation: keylinesRise;
+    -webkit-animation-duration: 1400ms;
+    animation-duration: 1400ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 300ms;
+    animation-delay: 300ms
+}
+
 
 
 
