@@ -1,4 +1,5 @@
 @import url(http://db.onlinewebfonts.com/c/65482afbeb61af43c403d0fec1fdb679?family=Neo+Sans+Pro);
+
 body {
     font-size: 100%;
     text-rendering: optimizeLegibility;
@@ -251,10 +252,8 @@ ul {
     top: 12%;
     border-radius: 2px;
     left: 6%;
-    border: 1px solid #444;
-    background-color: #aaa;
+
     overflow: hidden;
-    background: url(../../assets/img/screen-content-iphone-6.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -268,7 +267,7 @@ ul {
     top: -12%;
     right: -60%;
     transform: rotate(-19deg);
-    opacity: 0.2;
+    opacity: 0;
 }
 
 .btn.btn-light.btn-lg.action-button.main {
@@ -428,6 +427,7 @@ F .hero-canvas {
 }
 
 
+
 /* Button - Components */
 
 .btn-canvas a {
@@ -451,8 +451,11 @@ F .hero-canvas {
 }
 
 #about .about-primary-canvas {
+    display: block;
     text-align: center;
     padding: 100px 0;
+    overflow: hidden;
+    height: 899px;
 }
 
 #about .subhead-txt {
@@ -577,6 +580,58 @@ F .hero-canvas {
     top: 150px;
     left: calc(50% - 60px);
 }
+
+#about .screen-canvas {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#about .screens-mockup img.screens-1 {
+    position: absolute;
+    z-index: -1;
+    left: calc(50% - 374px);
+    bottom: 0;
+    top: 20px;
+    width: 30%;
+    height: auto;
+
+
+}
+
+#about .screens-mockup img.screens-2 {
+    position: absolute;
+    z-index: -2;
+    left: calc(50% - 154px);
+    bottom: 0;
+    top: 50px;
+    width: 30%;
+    height: auto;
+}
+
+#about .screens-mockup img.screens-3 {
+    position: absolute;
+    z-index: -3;
+    left: calc(50% + 54px);
+    bottom: 0;
+    top: 100px;
+    width: 30%;
+    height: auto;
+}
+
+#about .screen-mockup.animation-go img.screens-3 {
+    -webkit-animation: keylinesRise;
+    animation: keylinesRise;
+    -webkit-animation-duration: 1400ms;
+    animation-duration: 1400ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 100ms;
+    animation-delay: 100ms
+}
+
 
 
 /* Section - Challenges */
@@ -823,9 +878,11 @@ F .hero-canvas {
     [name="approach-header"] .approach-canvas {
         display: block;
     }
+
     [name="approach-header"] .img-canvas .approach-img {
         width: calc(100vw - 7.5%);
     }
+
     [name="approach-header"] .approach-content_container {
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
@@ -833,12 +890,15 @@ F .hero-canvas {
         margin-left: 7.5%;
         transform: translateX(4rem);
     }
+
     [name="approach-header"] .approach-content_container .fill-area {
         padding: 4% 0 19%;
     }
+
     [name="approach-header"] .approach-content_container .fill-area:before {
         display: none;
     }
+
     [name="approach-header"] .approach-content_container .fill-area:after {
         content: "";
         display: block;
@@ -867,6 +927,7 @@ F .hero-canvas {
     [name="approach-header"] .approach-content_container .fill-area {
         padding: 0 0 13%;
     }
+
     [name="approach-header"] .approach-content_container .fill-area:after {
         height: 60%;
     }
@@ -877,9 +938,11 @@ F .hero-canvas {
         margin-top: 20px;
         grid-column: 1/12;
     }
+
     [name="approach-header"] .hero-head {
         grid-column: 1/6;
     }
+
     [name="approach-header"] .app-content-sm {
         grid-column: 1/8;
     }
@@ -1235,6 +1298,7 @@ F .hero-canvas {
         transform: translateY(50px);
         opacity: 0
     }
+
     100% {
         -webkit-transform: translateY(0px);
         transform: translateY(0px);
@@ -1248,6 +1312,7 @@ F .hero-canvas {
         transform: translateY(50px);
         opacity: 0
     }
+
     100% {
         -webkit-transform: translateY(0px);
         transform: translateY(0px);
@@ -1264,6 +1329,7 @@ F .hero-canvas {
         -webkit-transform: translateY(0.5em);
         transform: translateY(0.5em)
     }
+
     100% {
         opacity: 1;
         -webkit-transform: translateY(0);
@@ -1277,6 +1343,7 @@ F .hero-canvas {
         -webkit-transform: translateY(0.5em);
         transform: translateY(0.5em)
     }
+
     100% {
         opacity: 1;
         -webkit-transform: translateY(0);
@@ -1289,6 +1356,7 @@ F .hero-canvas {
         -webkit-transform: translateY(10em);
         transform: translateY(10em)
     }
+
     100% {
         -webkit-transform: translateY(0);
         transform: translateY(0)
@@ -1300,6 +1368,7 @@ F .hero-canvas {
         -webkit-transform: translateY(10em);
         transform: translateY(10em)
     }
+
     100% {
         -webkit-transform: translateY(0);
         transform: translateY(0)
@@ -1314,6 +1383,7 @@ F .hero-canvas {
         opacity: 0;
         -webkit-transform: translateX(5rem);
     }
+
     100% {
         opacity: 1;
         -webkit-transform: translateX(0);
@@ -1325,6 +1395,7 @@ F .hero-canvas {
         opacity: 0;
         transform: translateX(5rem);
     }
+
     100% {
         opacity: 1;
         transform: translateX(0);
@@ -1340,6 +1411,7 @@ F .hero-canvas {
         -webkit-box-shadow: 0 60px 120px rgba(0, 0, 0, 0.4);
         box-shadow: 0 60px 120px rgba(0, 0, 0, 0.4);
     }
+
     100% {
         -webkit-transform: translateX(0rem);
         -webkit-box-shadow: 0 60px 120px rgba(0, 0, 0, 0);
@@ -1353,6 +1425,7 @@ F .hero-canvas {
         -webkit-box-shadow: 0 60px 120px rgba(0, 0, 0, 0.4);
         box-shadow: 0 60px 120px rgba(0, 0, 0, 0.4);
     }
+
     100% {
         transform: translateX(0rem);
         -webkit-box-shadow: 0 60px 120px rgba(0, 0, 0, 0);
@@ -1367,6 +1440,7 @@ F .hero-canvas {
     0% {
         transform: translateX(6rem);
     }
+
     100% {
         transform: translateX(0rem);
     }
@@ -1376,6 +1450,7 @@ F .hero-canvas {
     0% {
         transform: translateY(6rem);
     }
+
     100% {
         transform: translateY(0rem);
     }
