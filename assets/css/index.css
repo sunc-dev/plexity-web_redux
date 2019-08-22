@@ -381,7 +381,7 @@ F .hero-canvas {
     margin-bottom: 30px;
 }
 
-.pts-items-canvas .scene-1.animation-ready .item .item-box_container {
+.pts-items-canvas .scene-1.animation-go .item .item-box_container {
     transform: translateY(6em);
     -webkit-animation: objectRise;
     animation: objectRise;
@@ -455,7 +455,7 @@ F .hero-canvas {
     text-align: center;
     padding: 25px 0;
     overflow: hidden;
-    height: 870px;
+    height: 802px;
 }
 
 #about .subhead-txt {
@@ -494,7 +494,7 @@ F .hero-canvas {
     line-height: 1.4;
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 @media (min-width: 576px) {
@@ -581,7 +581,7 @@ F .hero-canvas {
     left: calc(50% - 60px);
 }
 
-#about .screen-canvas {
+#about .screens {
     display: flex;
     position: relative;
     justify-content: center;
@@ -594,11 +594,12 @@ F .hero-canvas {
     z-index: -1;
     left: calc(50% - 374px);
     bottom: 0;
-    top: 20px;
+    top: 22px;
     width: 30%;
     height: auto;
-
-
+    -webkit-transform: translateY(450px);
+    transform: translateY(450px);
+    opacity: 0;
 }
 
 #about .screens-mockup img.screens-2 {
@@ -609,6 +610,9 @@ F .hero-canvas {
     top: 50px;
     width: 30%;
     height: auto;
+    -webkit-transform: translateY(650px);
+    transform: translateY(650px);
+    opacity: 0;
 }
 
 #about .screens-mockup img.screens-3 {
@@ -619,20 +623,23 @@ F .hero-canvas {
     top: 100px;
     width: 30%;
     height: auto;
+    -webkit-transform: translateY(650px);
+    transform: translateY(650px);
+    opacity: 0;
 }
 
-#about .screens-mockup.animation-go img.screens-1 {
+#about .screens-mockup .screens-1.animation-go {
     -webkit-animation: keylinesRise;
     animation: keylinesRise;
     -webkit-animation-duration: 1400ms;
     animation-duration: 1400ms;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-    -webkit-animation-delay: 100ms;
-    animation-delay: 100ms
+    -webkit-animation-delay: 50ms;
+    animation-delay: 50ms
 }
 
-#about .screens-mockup.animation-go img.screens-2 {
+#about .screens-mockup .screens-2.animation-go {
     -webkit-animation: keylinesRise;
     animation: keylinesRise;
     -webkit-animation-duration: 1400ms;
@@ -643,7 +650,7 @@ F .hero-canvas {
     animation-delay: 200ms
 }
 
-#about .screens-mockup.animation-go img.screens-3 {
+#about .screens-mockup .screens-3.animation-go {
     -webkit-animation: keylinesRise;
     animation: keylinesRise;
     -webkit-animation-duration: 1400ms;

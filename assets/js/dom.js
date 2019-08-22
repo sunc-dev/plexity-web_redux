@@ -108,13 +108,66 @@ itembox.forEach(itembox => {
     ScrollOut({
         onShown: function (itembox) {
             // remove the class
-            itembox.classList.remove("animation-ready");
+            itembox.classList.remove("animation-go");
 
             // force reflow
             void itembox.offsetWidth;
 
             // re-add the animated cl
-            itembox.classList.add("animation-ready");
+            itembox.classList.add("animation-go");
+        }
+    });
+});
+
+
+var screens = document.querySelectorAll(".screens-1");
+screens.forEach(screens => {
+    screens.setAttribute('data-scroll', '');
+    ScrollOut({
+        onShown: function (screens) {
+            // remove the class
+            screens.classList.remove("animation-go");
+
+            // force reflow
+            void screens.offsetWidth;
+
+            // re-add the animated cl
+            screens.classList.add("animation-go");
+        }
+    });
+});
+
+
+var screens = document.querySelectorAll(".screens-2");
+screens.forEach(screens => {
+    screens.setAttribute('data-scroll', '');
+    ScrollOut({
+        onShown: function (screens) {
+            // remove the class
+            screens.classList.remove("animation-go");
+
+            // force reflow
+            void screens.offsetWidth;
+
+            // re-add the animated cl
+            screens.classList.add("animation-go");
+        }
+    });
+});
+
+var screens = document.querySelectorAll(".screens-3");
+screens.forEach(screens => {
+    screens.setAttribute('data-scroll', '');
+    ScrollOut({
+        onShown: function (screens) {
+            // remove the class
+            screens.classList.remove("animation-go");
+
+            // force reflow
+            void screens.offsetWidth;
+
+            // re-add the animated cl
+            screens.classList.add("animation-go");
         }
     });
 });
